@@ -14,6 +14,7 @@ export function useThemeUpdate() {
 //////////////////////////////////////////////////
 export function ThemeProvider({ children }) {
   const [darkTheme, setDarkTheme] = useState(Pro.products)
+  const [Total,setTotal] = useState(0)
 //////////////////////////////////////
   function toggleTheme() {
     console.log(darkTheme);
@@ -45,13 +46,18 @@ export function ThemeProvider({ children }) {
     setDarkTheme(newItems);
   };
   const Calculate = () => {
-
-    
+    const prices = darkTheme.map((e) => e.price);
+    const total = prices.reduce((acc, price) => acc + price, 0);
+    setTotal(total);
+  }
+ 
+  const setTotall =(val)=> {
+    setTotal(val)
   }
 
 
   return (
-    <ThemeContext.Provider value={{darkTheme,toggleTheme,handleDecrease,handleToggleTheme,handleRemove}}>
+    <ThemeContext.Provider value={{darkTheme,toggleTheme,handleDecrease,handleToggleTheme,handleRemove,Total,setTotall,Calculate}}>
       <ThemeUpdateContext.Provider value={toggleTheme}>
         {children}
       </ThemeUpdateContext.Provider>

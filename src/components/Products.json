@@ -11,7 +11,7 @@
             "stock": 94,
             "brand": "Apple",
             "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+            "thumbnail": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111866_sp867-iphone-se-3gen.png",
             "images": [
                 "https://i.dummyjson.com/data/products/1/1.jpg",
                 "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -31,7 +31,7 @@
             "stock": 34,
             "brand": "Apple",
             "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+            "thumbnail": "https://banner2.cleanpng.com/20180814/bzc/kisspng-apple-iphone-x-64-gb-space-gray-unlocked-g-iphone-x-unlocked-enlabotica-com-5b72a076c06984.0671071915342388387881.jpg",
             "images": [
                 "https://i.dummyjson.com/data/products/2/1.jpg",
                 "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -42,15 +42,15 @@
         {
             "id": 3,
             "quantity": 0,
-            "title": "Samsung Universe 9",
-            "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+            "title": "Nokia Lumia 1020",
+            "description": "PureView Pro is an imaging technology used in the Nokia 1020 device",
             "price": 1249,
             "discountPercentage": 15.46,
             "rating": 4.09,
             "stock": 36,
-            "brand": "Samsung",
+            "brand": "Nokia",
             "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+            "thumbnail": "https://w7.pngwing.com/pngs/237/385/png-transparent-microsoft-lumia-950-nokia-phone-series-%E8%AB%BE%E5%9F%BA%E4%BA%9E-pureview-lte-nokia-lumia-1020-gadget-electronics-mobile-phone.png",
             "images": [
                 "https://i.dummyjson.com/data/products/3/1.jpg"
             ]
@@ -58,15 +58,15 @@
         {
             "id": 4,
             "quantity": 0,
-            "title": "OPPOF19",
-            "description": "OPPO F19 is officially announced on April 2021.",
+            "title": "Nokia N8",
+            "description": "Run on the Symbian^3 operating system",
             "price": 280,
             "discountPercentage": 17.91,
             "rating": 4.3,
             "stock": 123,
-            "brand": "OPPO",
+            "brand": "Nokia",
             "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+            "thumbnail": "https://w7.pngwing.com/pngs/853/421/png-transparent-nokia-n8-nokia-e7-00-nokia-nseries-%E8%AB%BE%E5%9F%BA%E4%BA%9E-smartphone-gadget-electronics-mobile-phone.png",
             "images": [
                 "https://i.dummyjson.com/data/products/4/1.jpg",
                 "https://i.dummyjson.com/data/products/4/2.jpg",
@@ -78,15 +78,15 @@
         {
             "id": 5,
             "quantity": 0,
-            "title": "Huawei P30",
-            "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+            "title": "Nokia Lumia 800",
+            "description": " Nokia's first device to run the Windows Phone operating system",
             "price": 499,
             "discountPercentage": 10.58,
             "rating": 4.09,
             "stock": 32,
-            "brand": "Huawei",
+            "brand": "Nokia",
             "category": "smartphones",
-            "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+            "thumbnail": "https://image.pngaaa.com/205/5389205-middle.png",
             "images": [
                 "https://i.dummyjson.com/data/products/5/1.jpg",
                 "https://i.dummyjson.com/data/products/5/2.jpg",

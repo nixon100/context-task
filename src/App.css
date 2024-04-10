@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
-	height: 100vh;
+	/* height: 100vh; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -10,7 +10,7 @@ body{
 
 .CartContainer {
   width: 70em;
-  height: 35em;
+  /* height: 35em; */
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 10px 20px #1687d933;
@@ -138,10 +138,19 @@ hr{
 	float: right;
 	margin-right: 5%;
 }
-.checkout{
-	float: right;
-	margin-right: 5%;
-	width: 28%;
+.checkout {
+    padding-bottom: 25px;
+    /* float: right; */
+    margin-right: 5%;
+    width: 28%;
+    margin-inline-start: 752px;
+    /* position: absolute; */
+    /* margin-block-start: 3em; */
+    /* margin-inline-end: 10em; */
+    /* margin-right: 12em; */
+    /* margin-inline-end: 11em; */
+    /* padding: 0px; */
+    /* text-align: right; */
 }
 .total{
 	width: 100%;
