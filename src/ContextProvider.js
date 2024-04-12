@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState,useEffect } from 'react'
 import Pro from './components/Products.json'
 
 export const ThemeContext = React.createContext()
@@ -15,6 +15,8 @@ export function useThemeUpdate() {
 export function ThemeProvider({ children }) {
   const [darkTheme, setDarkTheme] = useState(Pro.products)
   const [Total,setTotal] = useState(0)
+  const [QuantityV, setQuantityV] = useState([])
+  const [Prices,setPrices] = useState(5)
 //////////////////////////////////////
   function toggleTheme() {
     console.log(darkTheme);
@@ -54,10 +56,23 @@ export function ThemeProvider({ children }) {
   const setTotall =(val)=> {
     setTotal(val)
   }
-
-
+  // const QuaV =()=>{
+  //     const a = darkTheme.map((item, index) => (item.price * darkTheme[index].quantity));
+  //     console.log(a)
+  //     setQuantityV(a)
+  // }
+  // useEffect(() => {
+  //   const a = darkTheme.map((item, index) => (item.price * darkTheme[index].quantity));
+  //   console.log(a);
+  //   setQuantityV(a);
+  //   console.log(QuantityV)
+  // }, [darkTheme]);
+  // useEffect(() => {
+  //   console.log(QuantityV);
+  // });
+ 
   return (
-    <ThemeContext.Provider value={{darkTheme,toggleTheme,handleDecrease,handleToggleTheme,handleRemove,Total,setTotall,Calculate}}>
+    <ThemeContext.Provider value={{darkTheme,toggleTheme,handleDecrease,handleToggleTheme,handleRemove,Total,setTotall,Calculate,Prices}}>
       <ThemeUpdateContext.Provider value={toggleTheme}>
         {children}
       </ThemeUpdateContext.Provider>

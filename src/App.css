@@ -58,20 +58,22 @@ body{
 	height: 100%;
 	width: 24%;
 }
-.title{
-	padding-top: 10px;
-	line-height: 10px;
-	font-size: 32px;
-	font-family: 'Open Sans';
-	font-weight: 800;
-	color: #202020;
+.title {
+    padding-top: 0px;
+    line-height: 30px;
+    font-size: 32px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    color: #202020;
+    /* padding-top: 5px; */
+    /* margin-top: 0px; */
 }
-.subtitle{
-	line-height: 10px;
-	font-size: 18px;
-	font-family: 'Open Sans';
-	font-weight: 600;
-	color: #909090;
+.subtitle {
+    line-height: 18px;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #909090;
 }
 
 .counter{
