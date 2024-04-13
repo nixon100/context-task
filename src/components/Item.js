@@ -14,10 +14,10 @@ const Item = ({ item, onDecrease, onToggleTheme, onSaveForLater, onRemove,quanti
     <div className="counter">
       <div className="btn" onClick={onDecrease}>-</div>
       <div className="count">{item.quantity}</div>
-      <div className="btn" onClick={{onToggleTheme}}>+</div>
+      <div className="btn" onClick={onToggleTheme}>+</div>
     </div>
     <div className="prices">
-      <div className="amount">{quantityy}</div>
+      <div className="amount">{item.perPrice}</div>
       <div className="save" onClick={onSaveForLater}><u>Save for later</u></div>
       <div className="remove" onClick={onRemove}><u>Remove</u></div>
     </div>

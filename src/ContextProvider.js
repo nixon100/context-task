@@ -30,14 +30,33 @@ export function ThemeProvider({ children }) {
     };
   };
 
+  // const handleToggleTheme = (index) => {
+  //   return () => {
+  //     const newItems = [...darkTheme];
+  //     newItems[index].quantity += 1;
+  //     setDarkTheme(newItems);
+  //     const newItem1 = [...darkTheme];
+  //     newItem1[index]["perPrice"] = "gshgjg"
+  //     // newItem1[index].perPrice = newItem1[index].quantity*newItem1[index].price
+  //     // setDarkTheme(newItem1)
+  //     console.log(darkTheme)
+  //   };
+  // };
   const handleToggleTheme = (index) => {
     return () => {
-      const newItems = [...darkTheme];
-      newItems[index].quantity += 1;
-      setDarkTheme(newItems);
+      setDarkTheme((prevDarkTheme) => {
+        const newItems = [...prevDarkTheme];
+        newItems[index] = {
+          ...newItems[index],
+          quantity: newItems[index].quantity + 1,
+          perPrice: "gshgjg" // or newItems[index].quantity * newItems[index].price
+        };
+        return newItems;
+      });
+      console.log(darkTheme)
     };
   };
-
+  console.log(darkTheme)
   const handleSaveForLater = (index) => {
     // Save for later logic
   };
