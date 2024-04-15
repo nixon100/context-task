@@ -2,8 +2,6 @@
     "products": [
         {
             "id": 1,
-            "quantity": 1,
-            
             "title": "iPhone 9",
             "description": "An apple mobile which is nothing like apple",
             "price": 549,
@@ -23,7 +21,6 @@
         },
         {
             "id": 2,
-            "quantity": 1,
             "title": "iPhone X",
             "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
             "price": 899,
@@ -42,7 +39,6 @@
         },
         {
             "id": 3,
-            "quantity": 1,
             "title": "Nokia Lumia 1020",
             "description": "PureView Pro is an imaging technology used in the Nokia 1020 device",
             "price": 1249,
@@ -58,7 +54,6 @@
         },
         {
             "id": 4,
-            "quantity": 1,
             "title": "Nokia N8",
             "description": "Run on the Symbian^3 operating system",
             "price": 280,
@@ -78,7 +73,6 @@
         },
         {
             "id": 5,
-            "quantity": 1,
             "title": "Nokia Lumia 800",
             "description": " Nokia's first device to run the Windows Phone operating system",
             "price": 499,

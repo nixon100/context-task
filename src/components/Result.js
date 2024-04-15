@@ -1,72 +1,50 @@
-import React, { useContext,useState,useEffect } from 'react'
-import { useTheme, useThemeUpdate,ThemeContext} from '../ContextProvider'
+import React, { useContext, useEffect } from 'react';
+import { ThemeContext } from '../ContextProvider';
 import Item from './Item';
 
 export default function FunctionContextComponent() {
-  const [StateA, setStateA] = useState({
-    A:"",
-    B: "",
-    C:"",
-    D:""
-  })
-  const darkTheme22 = useContext(ThemeContext)
-  const {darkTheme, toggleTheme,handleDecrease ,handleToggleTheme ,handleRemove,Total,Calculate,Quant,QuaV,Prices} = darkTheme22
-  // const toggleTheme = useThemeUpdate()
+  const darkTheme22 = useContext(ThemeContext);
+  const { darkTheme, handleRemove, Total, Calculate, doll, doll1, setArrive, arrive } = darkTheme22;
 
-/////////////////
- useEffect(() => {
-    const a = darkTheme.map((item, index) => (item.price * darkTheme[index].quantity));
-    console.log(a);
-    setStateA(gf =>{});
-    
-  }, [darkTheme]);
-  useEffect(()=>{
-    console.log(StateA)
-    FFF()
-  })
- function FFF() {
+  useEffect(() => {
+    setArrive((pre) => (pre.map((e) => ({ ...e, quantity: 1 }))));
+  }, []);
 
- }
+
 
   return (
     <div className="CartContainer">
-    <div className="Header">
-       <h3 className="Heading">Shopping Cart</h3>
-       <h5 className="Action">Remove all</h5>
-   </div>  
-   
-   {Calculate()}
-   
-   
- {darkTheme.map((item, index) => (
-  <>
-     {/* Call the Calculate function with the item as an argument */}
-    <Item
-      key={item.id}
-      item={item}
-      onDecrease={handleDecrease(index)}
-      onToggleTheme={handleToggleTheme(index)}
-      quantityy ={Quant}
-      ind ={index}
-      
-      //  onSaveForLater={() => handleSaveForLater(index)}
-      onRemove={() => handleRemove(index)}
-    />
-  </>
-))}
-    <hr/> 
+      <div className="Header">
+        <h3 className="Heading">Shopping Cart</h3>
+        <h5 className="Action">Remove all</h5>
+      </div>
+      {Calculate()}
+      {arrive.map((item, index) => (
+        <>
+          {/* Call the Calculate function with the item as an argument */}
+          <Item
+            key={item.id}
+            item={item}
+            onToggleTheme={darkTheme}
+            ind={index}
+            pri={doll(index)}
+            pri1={doll1(index)}
+            //  onSaveForLater={() => handleSaveForLater(index)}
+            onRemove={() => handleRemove(index)}
+          />
+        </>
+      ))}
+      <hr />
       <div className="checkout">
-      <div className="total">
-        <div>
-          <div className="Subtotal">Sub-Total</div>
-          <div className="items">2 items</div>
+        <div className="total">
+          <div>
+            <div className="Subtotal">Sub-Total</div>
+            <div className="items">{arrive.length > 1 ? `${arrive.length} items` : `${arrive.length} item`}</div>
+          </div>
+          <div className="total-amount">{Total}</div>
         </div>
-        <div className="total-amount">{Total}</div>
+        <button className="button">Checkout</button>
       </div>
-      <button className="button" >Checkout</button>
-      </div>
-      
     </div>
-
-  )
+  );
 }
